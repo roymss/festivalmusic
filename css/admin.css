@@ -1,0 +1,73 @@
+/* My Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Birthstone+Bounce:wght@400;500&family=Oswald:wght@200..700&display=swap");
+
+/* My Root */
+
+:root {
+  --font-hand: "Birthstone Bounce", cursive;
+  --color: #ed145b;
+  --oswald: "Oswald", sans-serif;
+  --bebas: "Bebas Neue", sans-serif;
+}
+
+
+/* My Styles */
+
+body {
+    font-family: var(--oswald);
+}
+
+.navbar-brand {
+  font-family: var(--font-hand);
+  color: var(--color);
+  font-weight: bold;
+}
+
+/* ADD */
+
+.fonts {
+  font-family: var(--oswald);
+  font-size: 2rem;
+}
+
+.add-perf {
+  margin-top: 100px;
+}
+
+/* Button */
+
+.btn-danger {
+  background-color: var(--color);
+  font-weight: bold;
+  font-family: var(--oswald);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+  font-weight: bold;
+  font-family: var(--oswald);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: transparent;
+    border: 1px solid green;
+    color: green;
+}
+
+.btn-danger:hover {
+  background-color: transparent;
+  border: 1px solid var(--color);
+  color: var(--color);
+}
+
+/* Admin */
+
+.admin-profile {
+  margin-top: 100px;
+}
+
+.admin-profile .row img {
+    border-radius: 50%;
+}
