@@ -1,9 +1,9 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jun 09, 2024 at 09:05 PM
+-- Generation Time: Jun 11, 2024 at 12:02 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -61,12 +61,12 @@ CREATE TABLE `performers` (
 --
 
 INSERT INTO `performers` (`id`, `gambar_performers`, `nama_performers`) VALUES
-(7, '66660eb0a7808.jpg', 'Fabio Meser'),
-(8, 'Fabioasher.jpg', 'asdasdasd'),
-(9, 'Fabioasher.jpg', 'xxxxxx'),
-(10, 'Fabioasher.jpg', 'afafagagf'),
-(11, 'Fabioasher.jpg', 'adadadad'),
-(12, 'Fabioasher.jpg', 'asdaqwe');
+(7, '66660eb0a7808.jpg', 'Fabio Asher'),
+(8, '66678e3455cee.jpeg', 'Lyodra Ginting'),
+(9, '66678e4996329.jpg', 'Mahalini'),
+(10, '66678e6718187.jpg', 'Keisya Levronka'),
+(11, '66678f27942c3.jpg', 'Tulus'),
+(12, '66678e862107d.jpg', 'Asep Balon');
 
 -- --------------------------------------------------------
 
@@ -110,7 +110,26 @@ CREATE TABLE `shop` (
 
 INSERT INTO `shop` (`id`, `nama_produk`, `desk`, `harga_produk`, `gambar_produk`) VALUES
 (1, 'Asher Clothes', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis vitae quis voluptas vel odio voluptate minus! Fuga perspiciatis excepturi error dolorem nostrum, officiis, eius repellat id autem sapiente ad sint odio iste. Sequi delectus quam excepturi illo similique eum fugit neque ratione animi? Laborum eius, suscipit officiis blanditiis provident dicta.', '250.001', 'Fabioasher.jpg'),
-(5, 'asdasd', 'Some quick example text to build on the card title and make up the bulk of the card&#039;s content.', '29.000.000', '666615a25534c.jpg');
+(5, 'Lyodra Clothes', 'Some quick example text to build on the card title and make up the bulk of the card&#039;s content.', '250.000', '6667933bb8dc8.jpeg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `id` int NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id`, `username`, `password`) VALUES
+(2, 'alya4', 'b44b0ca4e470df5baac57deff1634012');
 
 --
 -- Indexes for dumped tables
@@ -143,6 +162,13 @@ ALTER TABLE `shop`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -169,6 +195,12 @@ ALTER TABLE `schedule`
 --
 ALTER TABLE `shop`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
