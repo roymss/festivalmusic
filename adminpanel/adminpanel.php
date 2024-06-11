@@ -1,10 +1,18 @@
 <?php
 
+session_start();
+
+if(!isset($_SESSION['session_username'])){
+    header("../index.php");
+    exit();
+}
+
 require '../inc/function.php';
 
 include('add.php');
 
 $performers = query("SELECT * FROM performers");
+$user = query("SELECT * FROM user");
 
 if(isset($_POST["cari"])){
     $performers = cari($_POST["keyword"]);

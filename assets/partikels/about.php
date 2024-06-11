@@ -1,4 +1,4 @@
-<div class="about d-flex justify-content-center align-items-center">
+<div class="about w-100 vh-100 d-flex justify-content-center align-items-center">
     <div class="container">
         <h5 class="text-center sub-title">HIGLIGHTS</h5>
         <h2 class="text-center title-page mb-5">ABOUT FESTIVAL</h2>

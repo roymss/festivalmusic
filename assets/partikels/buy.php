@@ -59,9 +59,9 @@ $buy = query("SELECT * FROM shop WHERE nama_produk = '$nama'");
     <div class="container mt-6 d-flex">
         <?php foreach ($buy as $by) : ?>
             <div class="col-lg-5 bg-dark">
-                <img src="../../assets/img/<?= $by['gambar_produk'] ?>" class="object-fit-cover" width="600px" height="550px" alt="">
+                <img src="../../assets/img/<?= $by['gambar_produk'] ?>" class="object-fit-cover" width="600px" height="400px" alt="">
             </div>
-            <div class="col-lg-6 offset-lg-1">
+            <div class="col-lg-5 col-md-6 offset-lg-2">
                 <h1><?= $by['nama_produk'] ?></h1>
                 <p class="fs-5"><?= $by['desk'] ?>
                 <p class="fs-3">Rp <?= $by['harga_produk'] ?></p>

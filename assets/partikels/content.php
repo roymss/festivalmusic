@@ -7,6 +7,6 @@
 
         <h1 class="big-title">MUSIC FESTIVAL</h1>
 
-        <button class="btn btn-danger-2 mt-5">GET A TICKET</button>
+        <a class="btn btn-danger" href="assets/user/login.php">Login</a>
     </div>
 </div>

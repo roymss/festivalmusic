@@ -159,7 +159,7 @@ function uploadShop()
 
     $namaFileBaru = uniqid() . '.' . $ekstensiGambar;
 
-    move_uploaded_file($tmpName, '../assets/img/' . $namaFileBaru);
+    move_uploaded_file($tmpName, '../../assets/img/' . $namaFileBaru);
     
 
     return $namaFileBaru;

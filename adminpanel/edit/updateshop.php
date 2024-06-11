@@ -60,7 +60,7 @@ $shop = query("SELECT * FROM shop WHERE id = $id")[0];
                     <input type="text" class="form-control" name="harga_produk" placeholder="Input Price" required value="<?= $shop["harga_produk"] ?>">
                 </div>
                 <div class="col-12">
-                    <input type="file" class="form-control" name="gambar_produk" placeholder="Input Pict Product" value="<?= $shop["gambar_produk"] ?>">
+                    <input type="file" class="form-control" name="gambar_produk" placeholder="Input Pict Product">
                 </div>
                 <button type="submit" name="submit" class="btn btn-danger mb-3 w-100">Update Product</button>
             </form>

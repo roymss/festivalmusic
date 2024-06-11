@@ -14,16 +14,16 @@ if(isset($_POST["cari"])){
                 <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#event">Performers</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#shop">Shop</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Disabled</a>
+                <a class="nav-link" href="#contact">Contact</a>
             </li>
         </ul>
-        <form class="d-flex" role="search" method="POST">
+        <form action="#event" class="d-flex" role="search" method="POST">
             <input class="form-control me-2" name="keyword" type="text" placeholder="Search">
             <button class="btn btn-danger" type="submit" name="cari">Search</button>
         </form>

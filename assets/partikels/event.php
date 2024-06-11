@@ -1,4 +1,4 @@
-<div class="div">
+<div class="div" id="event">
     <div class="container">
         <h5 class="text-center sub-title mt-5">MEET ARTIST</h5>
         <h2 class="text-center title-page mb-5">EVENT PERFORMERS</h2>

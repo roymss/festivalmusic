@@ -53,7 +53,7 @@ $shop = query("SELECT * FROM shop");
 
     <!-- Shop -->
 
-    <div class="gallery w-100 vh-100 p-2 d-flex justify-content-center align-items-center">
+    <div class="gallery p-2 d-flex justify-content-center align-items-center" id="shop">
         <div class="container">
             <h5 class="text-center sub-title mt-5">FOR SELL</h5>
             <h2 class="text-center title-page mb-5">SHOP OPEN</h2>
@@ -76,7 +76,7 @@ $shop = query("SELECT * FROM shop");
 
     <!-- Follow -->
 
-    <div class="support text-center p-2 d-flex justify-content-center align-items-center flex-column">
+    <div class="support text-center p-2 d-flex justify-content-center align-items-center flex-column" id="contact">
         <h1 class="sub-title">FOLLOW US</h1>
         <h2 class="title-page">TWITTER FEED</h2>
         <button class="btn btn-danger contact-btn mx-auto">FOLLOW US</button>
